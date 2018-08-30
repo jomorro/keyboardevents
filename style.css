@@ -1,0 +1,17 @@
+body{
+    background-image: url(court.png);
+    background-position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vw;
+    width: 50vw;
+}
+
+#box {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background: none;
+    left: 200px;
+    top: 200px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keyboard Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    
+    <img id='box' src="bang.png" alt="the King">
+
+    <script>
+        let boxTop = 200;
+        let boxLeft = 200;
+        'use strict';
+        document.addEventListener('keydown', (event) => {
+            const keyName = event.key;
+            //checks movement of the arrow keys when pushed//
+            console.log('keydown event\n\n' + 'key: ' + keyName);
+
+            document.getElementById("box").style.top = boxTop + "px";
+            document.getElementById("box").style.left = boxLeft + "px";
+            switch (keyName) {
+                case "ArrowDown":
+                    boxTop += 10
+                    break;
+                case "ArrowUp":
+                    boxTop -= 10
+                    break;
+                case "ArrowLeft":
+                    boxLeft -= 10
+                    break;
+                case "ArrowRight":
+                    boxLeft += 10
+                    break;
+            }
+        });
+    </script>
+
+</body>
+
+<body>
+</body>
+
+</html>
